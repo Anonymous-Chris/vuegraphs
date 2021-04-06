@@ -31,6 +31,9 @@ export default {
                 {
                 type: 'bar',
                 data: [63, 55, 44, 92]
+                },
+                {type: 'line',
+                data: [63, 55, 44, 92]
                 }
             ]
             }

@@ -10,10 +10,10 @@
     </div>
         <div class="row"> 
       <div class="col heightofAll"> 
-        <single-bar/>
+        <piechart/>
       </div>
       <div class="col heightofAll">
-          <multi-bar/>
+          <piecharttest/>
       </div>
     </div>
   
@@ -24,12 +24,16 @@
 //import HelloWorld from './components/HelloWorld.vue'
 import SingleBar from './components/Bar/SingleBar.vue';
 import MultiBar from './components/Bar/MultiBar.vue';
+import Piechart from './components/Piechart/Piechart.vue';
+import Piecharttest from './components/Piechart/Piecharttest.vue';
 
 export default {
   name: 'App',
   components: {
     SingleBar,
-    MultiBar
+    MultiBar,
+    Piechart,
+    Piecharttest
 
   }
 }

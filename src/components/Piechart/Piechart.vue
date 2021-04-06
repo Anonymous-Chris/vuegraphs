@@ -1,13 +1,10 @@
 <template>
     <div class="singlebar">
-        <p>single bar</p>
+        <p>piechart</p>
          <chart class="chart" :option="chartOptionsBar" />
     </div>
 </template>
-
 <script>
-
-
 import "echarts";
 export default {
     data:()=>{
@@ -21,15 +18,20 @@ export default {
             },
             series: [
                 {
-                type: 'bar',
+                type: 'pie',
+                labelLine:{
+                    show:false
+                },
+                legend:{
+                    show:false
+                },
                 data: [63, 75, 24, 92]
                 },
-                        {type: 'line',
-                data: [0, 15, 4, 9]
-                }
+
             ]
-            }
-                    })
+            },
+
+        })
     },
     props:{
 
